@@ -1,0 +1,59 @@
+.copy-tool {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: end;
+}
+.copy-container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.copy-item {
+  display: flex;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .content-wrap {
+    flex: 1;
+  }
+  .item-footer {
+    display: flex;
+    margin-top: 5px;
+  }
+  .success {
+    margin-left: auto;
+    color: transparent;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+    &[data-active='true'] {
+      color: red;
+    }
+  }
+
+
+  .tags {
+    color: $secondary;
+    font-size: 0.8rem;
+  }
+
+  .btn-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid #f1f1f1;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    button {
+      display: block;
+    }
+    .copy {
+      margin-top: auto;
+    }
+  }
+}
